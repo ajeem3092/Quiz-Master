@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizMaster - Test Your Knowledge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js?v=2" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <div class="navbar">
+
+            <a href="#home" class="logo">QuizMaster.</a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#subjects">Subjects</a>
+            </nav>
+
+            <button type="button" id="theme-toggle" class="theme-toggle"
+                aria-label="Switch to dark mode" aria-pressed="false">
+                <span id="theme-icon">☾</span>
+                <span id="theme-text">Dark Mode</span>
+            </button>
+
+            <a href="#subjects" class="header-btn">Start Learning</a>
+
+        </div>
+
+    </header>
+
+    <!-- GLOBAL DASHBOARD -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">LEARN. PRACTICE. IMPROVE.</span>
+
+                <h1>
+                    Challenge Your Knowledge.
+                    <span>Discover Your Potential.</span>
+                </h1>
+
+                <p>
+                    Test your skills across multiple programming subjects.
+                    Choose your difficulty level, solve questions,
+                    and track your performance.
+                </p>
+
+                <a href="#subjects" class="primary-btn">
+                    Explore Subjects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+
+            <div class="section-heading">
+
+                <span>ABOUT US</span>
+
+                <h2>Learn Something New Every Day</h2>
+
+                <p>
+                    QuizMaster is an interactive learning platform
+                    designed to help students and developers test
+                    their knowledge through engaging quizzes.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features-section">
+
+            <div class="section-heading">
+
+                <span>WHY QUIZMASTER?</span>
+
+                <h2>Improve Your Skills</h2>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <h3>Multiple Subjects</h3>
+                    <p>Practice different programming languages and technologies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Four Difficulty Levels</h3>
+                    <p>Start with basic concepts and progress to expert challenges.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Countdown Timer</h3>
+                    <p>Improve your speed and problem-solving ability.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Score Tracking</h3>
+                    <p>Check your performance and identify areas to improve.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBJECT SECTION -->
+        <section id="subjects" class="subjects-section">
+
+            <div class="section-heading">
+
+                <span>EXPLORE AND LEARN</span>
+
+                <h2>Choose Your Subject</h2>
+
+                <p>
+                    Select a subject to explore its difficulty levels
+                    and start your quiz.
+                </p>
+
+            </div>
+
+
+            <div class="subjects-grid">
+
+                <button class="subject-card" data-subject="html">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                             alt="HTML Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>HTML</h3>
+                        <p>Web structure</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="css">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                             alt="CSS Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>CSS</h3>
+                        <p>Web styling</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="javascript">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                             alt="JavaScript Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>JavaScript</h3>
+                        <p>Programming</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="java">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                             alt="Java Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>Java</h3>
+                        <p>Object-oriented programming</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="python">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                             alt="Python Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>Python</h3>
+                        <p>Programming</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="sql">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                             alt="SQL Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>SQL</h3>
+                        <p>Database management</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="angular">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                             alt="Angular Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>Angular</h3>
+                        <p>Frontend framework</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="react">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                             alt="React Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>React</h3>
+                        <p>Frontend library</p>
+                    </div>
+
+                </button>
+
+
+                <button class="subject-card" data-subject="cpp">
+
+                    <div class="subject-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                             alt="C++ Logo">
+                    </div>
+
+                    <div class="subject-info">
+                        <h3>C++</h3>
+                        <p>Programming</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIFFICULTY SECTION -->
+        <section id="difficulty-section" class="difficulty-section hidden">
+
+            <div class="section-heading">
+
+                <span>SELECT YOUR LEVEL</span>
+
+                <h2>Choose Difficulty</h2>
+
+                <p id="selected-subject-name">
+                    Select your preferred difficulty level.
+                </p>
+
+            </div>
+
+            <div class="difficulty-grid">
+
+                <button class="difficulty-card" data-level="basic">
+                    <span>01</span>
+                    <h3>Basic</h3>
+                    <p>Fundamental concepts</p>
+                    <small>20 seconds / question</small>
+                </button>
+
+                <button class="difficulty-card" data-level="medium">
+                    <span>02</span>
+                    <h3>Medium</h3>
+                    <p>Practical knowledge</p>
+                    <small>30 seconds / question</small>
+                </button>
+
+                <button class="difficulty-card" data-level="advanced">
+                    <span>03</span>
+                    <h3>Advanced</h3>
+                    <p>Complex concepts</p>
+                    <small>45 seconds / question</small>
+                </button>
+
+                <button class="difficulty-card" data-level="expert">
+                    <span>04</span>
+                    <h3>Expert</h3>
+                    <p>Challenging problems</p>
+                    <small>60 seconds / question</small>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="quiz-screen hidden">
+
+            <div class="quiz-info">
+                <h3 id="quiz-subject">HTML Quiz</h3>
+                <span id="quiz-difficulty">Basic</span>
+            </div>
+
+            <div id="timer">Time: 20s</div>
+
+            <!-- Question Progress -->
+            <div class="question-progress">
+
+                <div class="progress-info">
+                    <span id="question-count">Question 1 of 10</span>
+
+                    <span id="progress-percentage">0%</span>
+                </div>
+
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+
+            </div>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="options-container"></div>
+
+            <p id="answer-feedback"></p>
+
+            <div class="quiz-actions">
+                <button id="next-btn" disabled>Next Question</button>
+
+                <button id="exit-quiz-btn" class="exit-quiz-btn">
+                    Exit Quiz
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="result-screen hidden">
+
+            <h1>Quiz Completed!</h1>
+
+            <h2 id="final-score">Your Score: 0/1</h2>
+
+            <p id="result-message">Good effort!</p>
+
+            <!-- Circular Score Indicator -->
+            <div class="score-circle" id="score-circle" role="img" aria-label="Quiz score">
+                <span id="circle-percentage">0%</span>
+            </div>
+
+            <!-- Quiz Statistics -->
+            <div class="result-stats">
+
+                <div class="stat-card">
+                    <h3 id="total-questions">0</h3>
+                    <p>Total Questions</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="correct-answers">0</h3>
+                    <p>Correct Answers</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="incorrect-answers">0</h3>
+                    <p>Incorrect Answers</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="score-percentage">0%</h3>
+                    <p>Percentage</p>
+                </div>
+
+            </div>
+
+            <!-- ANSWER REVIEW -->
+            <section class="answer-review" id="answer-review">
+                <h2>Review Your Answers</h2>
+                <p class="review-description">Check the answers you selected and compare them with the correct answers.</p>
+                <div id="answer-review-list"></div>
+            </section>
+
+            <button id="restart-btn">Try Again</button>
+
+            <a href="#subjects" class="secondary-btn">
+                Explore Other Subjects
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+
+        <div class="footer-content">
+
+            <h2>QuizMaster.</h2>
+
+            <p>
+                Learn, practice, and improve your technical knowledge.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#subjects">Subjects</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2024 Ajeem Makandar. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
